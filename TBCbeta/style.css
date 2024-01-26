@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navcolor-cover-activate: rgb(18, 113, 196);
+  --navcolor-passive: rgb(222, 222, 222);
+  --logo-text-: rgb(217, 218, 218);
+  --title-info-text: rgb(244, 244, 244);
+  --nav-bar-background: rgb(26, 30, 31);
+  --button-: rgb(22, 159, 234);
+  --background-button: rgb(43, 43, 43);
+  --mian-bk-color: rgb(22, 22, 22);
+  --box-info: rgb(232, 232, 232);
+  --border-: rgb(46, 46, 46);
+  --box-button: rgb(1, 169, 231);
+  --box-button-hover: rgb(44, 140, 174);
+  --footer-bk: rgb(22, 22, 22);
+}
+
+/* working on move info bar */
+.move-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--nav-bar-background);
+  position: fixed;
+  width: 100%;
+}
+#TBClogo {
+  width: 80px;
+  height: 80px;
+}
+#logo-name {
+  display: flex;
+  align-items: center;
+}
+.move-info h1 {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--title-info-text);
+}
+.move-info nav a {
+  color: var(--title-info-text);
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.move-info nav a:hover {
+  color: var(--navcolor-cover-activate);
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+/* work on title info contnet  "Introduction"*/
+header {
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tbc-title,
+.tbc-title-info {
+  width: 100%;
+  padding: 5% 25%;
+}
+
+header .tbc-title {
+  background-image: url("../assets/TCBmeeting.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+header .tbc-title p {
+  color: var(--title-info-text);
+  font-weight: 900;
+  font-size: 50px;
+  text-align: justify;
+  margin-top: 80px;
+}
+
+header .tbc-title-info {
+  color: var(--title-info-text);
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+header .tbc-title-info p {
+  color: var(--logo-text-);
+  font-weight: 300;
+  font-size: 40px;
+}
+header .tbc-title-info button {
+  color: var(--button-);
+  border: none;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: var(--background-button);
+}
+header .tbc-title-info button:hover {
+  color: var(--navcolor-passive);
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+/*  flex-box mian Info fix */
+main {
+  background-color: var(--mian-bk-color);
+}
+main .flexbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 5% 25%;
+}
+.box {
+  border-radius: 3%;
+  border: 1px solid rgb(65, 61, 61);
+  overflow: hidden;
+}
+.box button {
+  margin: 120px 10px 10px 30px;
+}
+.box h1 {
+  min-height: 60px;
+}
+.box p,
+.box h1 {
+  margin: 25px 10px 10px 30px;
+}
+
+.box1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.box2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.box3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.box4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.box5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.box6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.box7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.box8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.box9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+main .flexbox-grid h1 {
+  font-weight: 400;
+  font-size: 25px;
+}
+main .flexbox-grid p {
+  font-weight: 400;
+  font-size: 20px;
+}
+main .flexbox-grid h1,
+main .flexbox-grid p {
+  color: rgb(232, 232, 232);
+}
+main .flexbox-grid button {
+  color: var(--box-button);
+  background-color: var(--mian-bk-color);
+  border: none;
+  /* padding: 90px 0px 50px 30px; */
+  font-weight: 500;
+  font-size: 22px;
+}
+main .flexbox-grid button:hover {
+  color: var(--box-button-hover);
+  transition: color 0.5s;
+}
+
+#flexbox-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* slide conteiner     refix it is firs chatgpt code   */
+
+/*    questioon selection     */
+
+footer {
+  max-width: 100%;
+  text-align: center;
+  background-color: var(--footer-bk);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+footer .answer p {
+  background-color: black;
+  font-weight: 200;
+  color: white;
+  border: none;
+}
+footer .intro-questions button {
+  color: var(--box-button);
+  font-weight: 500;
+  font-size: 30px;
+  background-color: var(--mian-bk-color);
+  border: none;
+}
+footer .intro-questions button:hover {
+  color: var(--box-button-hover);
+}
+footer .intro-questions h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+}
+footer .question p,
+footer .answer p {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.intro-questions {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  gap: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions {
+  margin-top: 20px;
+}
+
+.question {
+  cursor: pointer;
+  padding: 30px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

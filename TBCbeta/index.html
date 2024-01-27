@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/TBClogo.png" alt="TBClogo" />
     <title>TBS x USAID</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,12 +33,11 @@
       </div>
       <div class="tbc-title-info">
         <p>
-          „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა <br />
-          საინფორმაციო ტექნოლოგიებით დაინტერესებულ ადამიანებს <br />
-          გთავაზობთ სრულად დsაფინანსებულ ონლაინ საგანმანათლებლო <br />
-          პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით. <br />
-          წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა <br />
-          დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში. <br />
+          „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა საინფორმაციო
+          ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ
+          ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.
+          წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა დასაქმდნენ თიბისისა
+          და მის პარტნიორ კომპანიებში.
         </p>
         <button>გაიგე მეტი</button>
       </div>
@@ -61,7 +65,7 @@
         <div class="box box4">
           <img
             id="flexbox-img"
-            src="../assets/cypersecurite4.png"
+            src="../assets/advacepython 5.png"
             alt="Image"
           />
           <h1 id="flexbox-title">Advanced Python</h1>
@@ -71,7 +75,7 @@
         <div class="box box5">
           <img
             id="flexbox-img"
-            src="../assets/advacepython 5.png"
+            src="../assets/cypersecurite4.png"
             alt="Image"
           />
           <h1 id="flexbox-title">Advanced Cybersecurity Course</h1>
@@ -112,30 +116,23 @@
         </div>
       </div>
     </main>
-    <div class="slider-container-partners">
-      <div class="partners">
-        <div class="partner">
+    <h1 class="partner-info">პროექტის პარტნიორები</h1>
+    <div id="slider-container">
+      <div id="photo-slider">
+        <div class="slide active">
           <img src="../assets/partner1.png" alt="Partner 1" />
-        </div>
-        <div class="partner">
           <img src="../assets/partner2.png" alt="Partner 2" />
-        </div>
-        <div class="partner">
           <img src="../assets/partner3.png" alt="Partner 3" />
         </div>
-        <div class="partner">
+        <div class="slide">
           <img src="../assets/partner4.png" alt="Partner 4" />
-        </div>
-        <div class="partner">
           <img src="../assets/partner5.png" alt="Partner 5" />
-        </div>
-        <div class="partner">
           <img src="../assets/partner6.png" alt="Partner 6" />
         </div>
-        <div class="partner">
-          <img src="../assets/partner7.png" alt="Partner 7" />
-        </div>
       </div>
+
+      <button id="prevBtn" onclick="prevSlide()">&#9665;</button>
+      <button id="nextBtn" onclick="nextSlide()">&#9655;</button>
     </div>
 
     <footer class="question-part">
@@ -196,7 +193,26 @@
         </div>
       </div>
     </footer>
-
+    <div class="end">
+      <div class="left">
+        <img src="../assets/tbc-end.png" alt="" />
+        <p>© 2023 ყველა უფლება დაცულია</p>
+        <p>წესები და პირობები</p>
+      </div>
+      <div class="right">
+        <div class="href">
+          <a href="www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <button class="contanct">მოგვწერეთ</button>
+      </div>
+    </div>
+    <h1>sssssss</h1>
+    <h2>ssssssssss</h2>
     <script src="script.js"></script>
   </body>
 </html>

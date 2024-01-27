@@ -104,18 +104,20 @@ header .tbc-title-info {
 }
 header .tbc-title-info p {
   color: var(--logo-text-);
-  font-weight: 300;
-  font-size: 40px;
+  font-size: 28px;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0em;
 }
 header .tbc-title-info button {
   color: var(--button-);
   border: none;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 900;
   background-color: var(--background-button);
 }
 header .tbc-title-info button:hover {
-  color: var(--navcolor-passive);
+  color: var(--navcolor--);
   transition: color 0.5s;
   text-decoration: none;
 }
@@ -217,9 +219,6 @@ footer {
   background-color: var(--footer-bk);
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 footer .answer p {
   background-color: black;
@@ -283,4 +282,106 @@ footer .answer p {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/*  working on slider first time   test modul  */
+
+.partner-info {
+  padding: 2% 25%;
+  color: var(--box-info);
+  background-color: rgb(43, 43, 43);
+  font-weight: 500;
+}
+#slider-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-color: rgb(43, 43, 43);
+}
+
+#photo-slider {
+  display: flex;
+  transition: visibility 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+  align-items: center;
+  padding: 2% 25%;
+  gap: 15%;
+}
+
+.slide.active {
+  visibility: visible;
+  position: absolute;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 50px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  border: none;
+}
+
+#prevBtn {
+  left: 100px;
+}
+
+#nextBtn {
+  right: 100px;
+}
+
+/*  end part */
+
+.end {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(26, 30, 31);
+  color: white;
+  padding: 2% 25%;
+  gap: 2% 50%;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30%;
+}
+.end p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.right button {
+  font-size: 20px;
+  background-color: rgb(20, 148, 199);
+  color: rgb(240, 250, 255);
+  border: none;
+  border-radius: 10%;
+  padding: 6% 20%;
+  cursor: pointer;
+}
+.right .href a {
+  font-size: 50px;
 }

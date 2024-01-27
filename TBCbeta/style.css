@@ -383,6 +383,10 @@ footer .answer p {
   padding: 6% 20%;
   cursor: pointer;
 }
+.right button:hover {
+  background-color: grey;
+  color: black;
+}
 .right .href a {
   font-size: 50px;
 }
